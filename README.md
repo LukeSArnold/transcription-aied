@@ -19,7 +19,31 @@ sustem hopes to help students recognize these components in music, not learn the
 Interval Recognition
 -----------------------------
 
+Students will hear two notes, then the two notes together in a defined interval chord. For example, an audio playback would play a G note, then a D note, then a G and D note 
+together to create a major 5th. Learners would need to choose the defined interval from a list of options below. The options would hope to include all possible 
+intervals. Intervals may include:
 
+Minor 2nd
+Major 2nd
+Minor 3rd
+Major 3rd
+Perfect 4th
+Diminished 5th
+Major 5th
+Minor 6th
+Major 6th
+Dominant 7th
+Major 7th
+Octave
+
+Files for Interval Recognition and Learner Model Updating
+------------------------------
+
+Lessons would be loaded from an existing file. This file would contain simply the mp3 file for interval playback, and the correct answer. These are loaded directly into the 
+system when navigating to the page for the specific lesson. The learner model will contain a log of competency for each interval. Following the student selection
+the system will determine whether the answer is correct, or incorrect. Provided the model is correct, a positive response will be given, and the learner model will be updated
+with the percentage of correct recogntiions of the interval. provided an incorrect response, the system will player the user's selection, as well as the original recording back
+to back as feedback. Then the system will update the percentage of correct recognitions will a negative impact on the total percentage. 
 
 Rhythm Transcription
 ------------------------------
@@ -33,6 +57,9 @@ music, and transcribe the rhythm onto the sheet music.
 
 For example, a musical sequence may play four quarter notes, one for each bar. The learner will then be expected to place four quarter notes at the start of each 
 measure as well as the corresponding number of rests.
+
+The original piece for transcription is played from a stored mp3 files, configured specially for the lessons. At any point of transcription students can 
+choose to play their written transcription. This is acheived through MIDI playback based on the configured midi inputs. 
 
 Reading Rhythm Transcription Files
 -------------------------------
